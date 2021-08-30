@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".displayInof">
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="تعديل البيانات"
+            android:textColor="#2672B6"
+            android:textSize="36sp" />
+
+        <ListView
+            android:id="@+id/kashDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="437dp" />
+
+        <Button
+            android:id="@+id/button7"
+
+            android:layout_width="101dp"
+            android:layout_height="51dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center"
+            android:onClick="bb"
+            android:text="رجوع"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

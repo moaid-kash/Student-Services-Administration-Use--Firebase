@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".rejester">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="105dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/edittext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="الرقم الجامعي"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="الاسم"
+        android:gravity="center"
+
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext3" />
+
+    <EditText
+        android:id="@+id/edittext7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="كلمة المرور"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext6" />
+
+    <Spinner
+        android:id="@+id/edittext5"
+        android:layout_width="214dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:background="#000000"
+        android:backgroundTint="#ECE9E9"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="القسم"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext4" />
+
+    <Spinner
+        android:id="@+id/edittext6"
+        android:layout_width="214dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="36dp"
+        android:background="#1B1919"
+        android:backgroundTint="#ECE9E9"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:ems="10"
+        android:hint="السنة"
+        android:gravity="center"
+
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext5" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="122dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttonshape"
+        android:text="الرجوع"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="122dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/buttonshape"
+        android:text="التسجيل"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
